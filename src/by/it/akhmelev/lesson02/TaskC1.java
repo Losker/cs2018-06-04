@@ -1,4 +1,4 @@
-package by.it.ivanov.lesson02;
+package by.it.akhmelev.lesson02;
 
 /* Нужно написать программу, которая вводит два числа с клавиатуры
 и выводит их сумму на экран в виде
