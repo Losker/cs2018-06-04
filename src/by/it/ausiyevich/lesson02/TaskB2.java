@@ -22,7 +22,7 @@ class TaskB2 {
 
     public static void main(String[] args) {
 
-        int result = + a + b + c + d;
+        int result = d - c - a + b ;
 
         System.out.println(result);
     }
