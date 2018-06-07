@@ -1,5 +1,8 @@
 package by.it.kolos.lesson02;
 
+import java.util.Locale;
+import java.util.Scanner;
+
 /*
 Ускорение свободного падения на Земле и Марсе таково:
 Марс   3.86
@@ -30,5 +33,25 @@ package by.it.kolos.lesson02;
 
 */
 class TaskC3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int weight = sc.nextInt();
+        double weightMars = getWeight(weight);
+        System.out.println(weightMars);
+    }
 
+    public static double getWeight(int weightEarth) {
+        double earth = 9.81;
+        double mars = 3.86;
+        double weightMars = weightEarth * mars / earth;
+        String rounded = String.format(Locale.US,"%.2f", weightMars);
+        /*String one = weightMars+"";// 1 - преобразование числа в строку
+        String two = String.valueOf(weightMars); // 2 - преобразование числа в строку
+        String three = ((Double)weightMars).toString(); // 3 - преобразование числа в строку
+        String rounded = String.format("%f", weightMars); // 4 - преобразование числа в строку (через формат.)
+*/
+        return Double.valueOf(rounded); // преобразов. в число
+    }
 }
+
+
