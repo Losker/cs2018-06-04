@@ -12,11 +12,11 @@ package by.it.osadnitski.lesson02;
 Создайте для этих целей метод getWeight(int weight)
 
 Требования:
-1. Метод getWeight(int weight) должен быть статическим.
-2. Метод getWeight должен возвращать значение типа double.
-3. Метод getWeight должен обязательно (!) округлять до сотых возвращаемое значение типа double.
-4. Метод getWeight не должен ничего выводить на экран.
-5. Метод getWeight должен правильно переводить вес тела в килограммах на Земле
+1.?Метод getWeight(int weight) должен быть статическим.
+2.?Метод getWeight должен возвращать значение типа double.
+3.?Метод getWeight должен обязательно (!) округлять до сотых возвращаемое значение типа double.
+4.?Метод getWeight не должен ничего выводить на экран.
+5.?Метод getWeight должен правильно переводить вес тела в килограммах на Земле
     в вес этого же тела на Марсе, и возвращать это значение.
 
 Пример:
@@ -29,6 +29,19 @@ package by.it.osadnitski.lesson02;
 
 
 */
-class TaskC3 {
+import java.util.Scanner;
 
+public class TaskC3 {
+    public static void main (String[]args) {
+        Scanner sc = new Scanner(System.in);
+        int weight = sc.nextInt();
+        System.out.println(getWeight(weight));
+    }
+    public static double getWeight(int weight) {
+
+        double mw = (3.86 / 9.81 * weight);
+        mw=Math.round(mw*100);
+        mw=mw/100;
+        return mw;
+    }
 }
