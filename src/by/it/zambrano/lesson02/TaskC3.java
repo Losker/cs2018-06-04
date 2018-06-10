@@ -34,8 +34,6 @@ import static org.junit.Assert.assertEquals;
 
 */
 class TaskC3 {
-    public static void main(String[] args){
-        Method m = t.aClass.getDeclaredMethod("getWeight", int.class);
 
     }
 }
