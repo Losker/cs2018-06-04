@@ -10,6 +10,11 @@ package by.it.ausiyevich.lesson02;
 Sum = 26
 */
 class TaskC1 {
+    public static void main(String[] args) {
+    }
+int a=34;
+int b=26;
+
 
 
 
