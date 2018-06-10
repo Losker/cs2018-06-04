@@ -32,6 +32,11 @@ package by.it.osadnitski.lesson02;
 import java.util.Scanner;
 
 public class TaskC3 {
+
+    public class G {
+        public static final double MARS =3.86;
+        public static final double EARTH =9.81;
+    }
     public static void main (String[]args) {
         Scanner sc = new Scanner(System.in);
         int weight = sc.nextInt();
@@ -39,9 +44,14 @@ public class TaskC3 {
     }
     public static double getWeight(int weight) {
 
-        double mw = (3.86 / 9.81 * weight);
-        mw=Math.round(mw*100);
-        mw=mw/100;
+        double mw = (G.MARS / G.EARTH * weight);
+        double mwt = Math.round(mw * 1000);
+        mw = Math.round(mw * 100);
+        mw = mw / 100;
+        double mwdr=mwt-mw*1000;
+        if (mwdr>4) {
+            mw=(mw*100+1)/100;
+        }
         return mw;
     }
 }
