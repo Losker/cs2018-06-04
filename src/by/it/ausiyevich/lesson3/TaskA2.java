@@ -1,4 +1,4 @@
-package by.it._tasks_.lesson03;
+package by.it.ausiyevich.lesson3;
 
 /*
 Lesson 03. Task A2. Стихотворение
@@ -22,6 +22,12 @@ Lesson 03. Task A2. Стихотворение
 */
 class TaskA2 {
     public static void main(String[] args) {
-
+        String a = "У лукоморья дуб зелёный:";
+        String b = "Златая цепь на дубе том:";
+        String c = "И днём и ночью кот учёный";
+        String d = "Всё ходит по цепи кругом";
+        System.out.println("Мое любимое стихотворение:");
+        System.out.println(a + "\n" + b + "\n" + c + "\n" +d);
     }
+
 }

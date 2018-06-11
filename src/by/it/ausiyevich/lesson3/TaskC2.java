@@ -1,4 +1,4 @@
-package by.it._tasks_.lesson03;
+package by.it.ausiyevich.lesson3;
 /*
     Сумма цифр четырехзначного числа
 

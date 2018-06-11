@@ -1,4 +1,4 @@
-package by.it._tasks_.lesson03;
+package by.it.ausiyevich.lesson3;
 
 /*
 Lesson 03. Task A1. Калькулятор.
@@ -32,24 +32,28 @@ Scanner sc=new Scanner(System.in);
 9.0 5.0 14.0 3.5 1.0
 
  */
-import java.util.Scanner;
-class TaskA1 {
 
+import java.util.Scanner;
+
+class TaskA1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int i = scanner.nextInt();
         int j = scanner.nextInt();
         int sum = i + j;
         int sub = i - j;
-        int mul = i * j;
+        int mul = i* j;
         int div = i / j;
         int mod = i % j;
-        System.out.println(sum + " "+ sub + "" + mul + "" + div + "" + mod);
+        System.out.println(sum + " " + sub + " " + mul + " " + div + " " + mod);
         double dsum = i + j;
-        double dsub = i - j;
+        double dsub = i-j;
         double dmul = i * j;
         double ddiv = (double) i / j;
         double dmod = i % j;
-        System.out.println(dsum + " ");
-        }
+        System.out.println(dsum + " " + dsub + " " + dmul + " " + ddiv + " " + dmod);
+
+
     }
+
+}
