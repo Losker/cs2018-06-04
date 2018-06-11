@@ -16,25 +16,25 @@ HEX:22+1a=3c
 OCT:42+32=74
 */
 
-//class TaskC2 {
-//    public static void main(String[] args) {
-//        int sum = 0,firstNumber, secondNumber ;
+class TaskC2 {
+    public static void main(String[] args) {
+       int sum = 0;
+       int BIN;
+        Scanner inputNumScanner = new Scanner(System.in);
+       System.out.println("Enter First Number: ");
+       int firstNumber = inputNumScanner.nextInt();
 
-//        Scanner inputNumScanner = new Scanner(System.in);
-//        System.out.println("Enter First Number: ");
-//        firstNumber = inputNumScanner.nextInt();
+      System.out.println("Enter Second Number: ");
+      int secondNumber = inputNumScanner.nextInt();
 
-//        System.out.println("Enter Second Number: ");
-//        secondNumber = inputNumScanner.nextInt();
-
-//        sum = firstNumber + secondNumber;
-//        BIN= Integer.toBinaryString(firstNumber)+Integer.toBinaryString(secondNumber);
-//        HEX= Integer.toHexString(firstNumber)+Integer.toHexString(secondNumber);
-//        OCT= Integer.toOctalString(firstNumber)+Integer.toOctalString(secondNumber);
-//        System.out.println(sum);
-//        System.out.println(BIN);
-//        System.out.println(HEX);
-//        System.out.println(OCT);
+        sum = firstNumber + secondNumber;
+       BIN= Integer.toBinaryString(firstNumber)+Integer.toBinaryString(secondNumber);
+       HEX= Integer.toHexString(firstNumber)+Integer.toHexString(secondNumber);
+        OCT= Integer.toOctalString(firstNumber)+Integer.toOctalString(secondNumber);
+        System.out.println(sum);
+        System.out.println(BIN);
+        System.out.println(HEX);
+        System.out.println(OCT);
 
 
 
