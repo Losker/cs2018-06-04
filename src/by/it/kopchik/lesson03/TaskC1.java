@@ -8,7 +8,7 @@ Lesson 03. Конвертер температуры
 
 Температура по Цельсию TC и температура по Фаренгейту TF связаны следующим соотношением:
 TC = (TF – 32) * 5/9
-
+TF=TC*(/5+32;
 Пример:
 В метод convertCelsiumToFahrenheit на вход подается значение 40.
 
@@ -24,14 +24,23 @@ TC = (TF – 32) * 5/9
 в градусы Фаренгейта и возвращать это число.*/
 
 
+import java.util.Scanner;
+
 class TaskC1 {
+    public  static double convertCelsiumToFahrenheit(int celsium) {
+        //напишите тут ваш код
+        double TF;
+        TF = (double) celsium * 9 / 5 + 32;
+        return TF;}
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+       int a = sc.nextInt();
+        System.out.println(convertCelsiumToFahrenheit(a));
+    }
 
 
 
+ }
 
 
-//    public static void main(String[] args) {
-//        System.out.println(convertCelsiumToFahrenheit(40));
-//    }
 
-}
