@@ -29,19 +29,24 @@ package by.it.karpinskaya.lesson02;
 
 
 */
+
 import java.util.Scanner;
-class   TaskC3 {
+
+class TaskC3 {
+    public static double getWeight(int weight) {
+        double mars = weight * (3.86 / 9.81);
+        mars = Math.rint(100.0 * mars) / 100.0;
+        return mars;
+
+    }
+
     public static void main(String[] args) {
         System.out.println("Введите свой вес (кг): ");
         Scanner sc = new Scanner(System.in);
         int weight = sc.nextInt();
-        double mars = weight * (3.86 / 9.81);
-        System.out.println("Ваш вес на Марсе: " + mars);
+        double weightm = getWeight(weight);
+        System.out.println("Ваш вес на Марсе: " + weightm);
     }
-        public static double getWeight(int weight, double mars) {
-        return mars;
-            //mars = mars * 100;
-            //int i = (int) Math.round(mars);
-            //mars = (double)i / 100;
-        }
+
+
 }
