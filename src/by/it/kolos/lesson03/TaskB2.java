@@ -43,9 +43,9 @@ class TaskB2 {
             double x2 = (-b - Math.sqrt(discriminant)) / (2 * a);
             System.out.println(x1 + " " + x2);
         } else if (discriminant == 0) {
-            double x1 = -b / (2 * a);
+            double x1 = (-b) / (2.0 * a);//необходим тип double, поэтому ставим 2.0!!!
             System.out.println(x1);
-        } else if (discriminant < 0) {
+        } else {
             System.out.println("Отрицательный дискриминант");
         }
     }
