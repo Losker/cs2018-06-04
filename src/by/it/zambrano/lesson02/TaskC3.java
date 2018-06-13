@@ -1,8 +1,8 @@
 package by.it.zambrano.lesson02;
 
-import java.lang.reflect.Method;
 
-import static org.junit.Assert.assertEquals;
+import java.util.Scanner;
+
 
 /*
 Ускорение свободного падения на Земле и Марсе таково:
@@ -34,6 +34,15 @@ import static org.junit.Assert.assertEquals;
 
 */
 class TaskC3 {
+    static double getWeight( int m) {
+        double res=m/9.81*3.86;
+        return Math.round(res*100)/100.0;
+    }
 
+    public static void main(String[] args) throws ClassNotFoundException {
+            Scanner scanner = new Scanner(System.in);
+            int m = scanner.nextInt();
+
+            System.out.println(getWeight(m));
     }
 }

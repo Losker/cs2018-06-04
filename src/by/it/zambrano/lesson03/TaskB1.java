@@ -25,11 +25,11 @@ float f - присваивание в десятичном формате
 
 strictfp class TaskB1 {
     public static  void main(String[] args) {
-        double d = 7;
-        double b = 111;
-        double o = 73;
-        double h = 273;
-        double f = 7;
+        double d = 111.111;
+        byte b = 0b111;
+        long o = 0111;
+        int h = 0x111;
+        float f = 111.111f;
         System.out.println(d + b + o + h + f);
         System.out.println(d + " " + b + " " + o + " " + h + " " + f);
     }
