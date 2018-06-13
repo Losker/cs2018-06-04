@@ -48,7 +48,7 @@ class TaskB2 {
             System.out.println(x1+" "+x2);
         }
         if (getDis(a, b, c) ==0) {
-            double x = -b/(2*a);
+            double x = -b/(2.0*a);
             System.out.println(x);
         }
         if (getDis(a, b, c) <0) {
@@ -57,7 +57,6 @@ class TaskB2 {
     }
     private static double getDis ( int a, int b, int c){
 
-        double dis = b * b - 4 * a * c;
-        return dis;
+        return (double) (b * b - 4 * a * c);
     }
 }
