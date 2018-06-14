@@ -1,5 +1,7 @@
 package by.it.zambrano.lesson04;
 
+import java.util.Scanner;
+
 /*
 Напишите программу которая спрашивает у пользователя:
 Какую вы хотите зарплату в $$$?
@@ -37,6 +39,28 @@ package by.it.zambrano.lesson04;
 
 */
 public class TaskC1 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        double zzz=sc.nextInt();
+        if(zzz<300 || zzz>3000)
+            System.out.println("Мы вам перезвоним!");
+        else{
+            for (int month=0; month<=14; month++){
+                double result=zzz*1.5;
+                if (month<1|| month>12) result=0;
+                if (month>=6 && month<=8) result=zzz;
+                String strMonth="мецяц" + month;
+                switch (month){
+                    case 1:strMonth="";break;
+                    case 12:strMonth="";break;
+                }
+            System.out.println("За "+strMonth+" начислено $" +result);
+            if (result==666.0)
+                break;
+            }
+
+        }
+    }
 
 
 }

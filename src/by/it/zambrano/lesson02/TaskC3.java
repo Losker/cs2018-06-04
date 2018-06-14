@@ -1,7 +1,7 @@
 package by.it.zambrano.lesson02;
 
 
-import java.util.Scanner;
+
 
 
 /*
@@ -33,16 +33,18 @@ import java.util.Scanner;
 
 
 */
+import java.util.Scanner;
 class TaskC3 {
-    static double getWeight( int m) {
-        double res=m/9.81*3.86;
+    static double getWeight( int massa) {
+        double res=massa/9.81*3.86;
         return Math.round(res*100)/100.0;
     }
 
-    public static void main(String[] args) throws ClassNotFoundException {
+    public static void main(String[] args){
             Scanner scanner = new Scanner(System.in);
-            int m = scanner.nextInt();
+            System.out.println("Enter weight person:");
+            int massa = scanner.nextInt();
 
-            System.out.println(getWeight(m));
+            System.out.println(getWeight(massa));
     }
 }
