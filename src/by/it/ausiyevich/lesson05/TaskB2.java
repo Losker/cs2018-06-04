@@ -1,4 +1,4 @@
-package by.it._tasks_.lesson05;
+package by.it.ausiyevich.lesson05;
 
 /*
 Один большой массив и два маленьких
@@ -19,7 +19,18 @@ a=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 b=[11, 22, 33, 44, 55, 66, 77, 88, 99, 0]
 
 */
+import java.util.Scanner;
+import java.util.Arrays;
 
 public class TaskB2 {
-
-}
+    public static void main(String[] args) {
+        int[] m = new int[20];
+        int[] a = new int[10];
+        int[] b = new int[10];
+        Scanner scanner=new Scanner(System.in);
+        System.arraycopy (m, 10, a, 0, 10);
+        System.arraycopy (m, 10, b, 0, 10);
+        System.out.println("a="+Arrays.toString(a));
+        System.out.println("b="+Arrays.toString(b));
+    }
+    }
