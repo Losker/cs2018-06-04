@@ -27,6 +27,5 @@ class TaskB1 {
         int i = sc.nextInt();
         int res = i * i;
         System.out.println(res);
-
     }
 }

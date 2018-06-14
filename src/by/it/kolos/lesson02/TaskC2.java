@@ -36,5 +36,4 @@ class TaskC2 {
         System.out.println("OCT:" + octall + "+" + octal2 + "=" + octal3);
 
     }
-
 }

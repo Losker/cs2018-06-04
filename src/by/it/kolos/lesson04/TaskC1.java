@@ -43,42 +43,74 @@ public class TaskC1 {
         System.out.print("Какую вы хотите зарплату в $$$?");
         Scanner sc = new Scanner(System.in);
         int s = sc.nextInt();
-        if (s >= 300 && s <= 3000) {
-            for (int month = 0; month <= 14; month++) {
-                if (month == 0)
-                    System.out.println("За" + " " + "месяц" + " " + month + " " + "начислено" + " " + "$" + s * 0.0);
-                else if (month == 1) {
-                    System.out.println("За" + " " + "январь" + " " + "начислено" + " " + "$" + s * 1.5);
-                    if (s * 1.5 == 666) break;
-                } else if (month == 2)
-                    System.out.println("За" + " " + "февраль" + " " + "начислено" + " " + "$" + s * 1.5);
-                else if (month == 3) System.out.println("За" + " " + "март" + " " + "начислено" + " " + "$" + s * 1.5);
-                else if (month == 4)
-                    System.out.println("За" + " " + "апрель" + " " + "начислено" + " " + "$" + s * 1.5);
-                else if (month == 5) System.out.println("За" + " " + "май" + " " + "начислено" + " " + "$" + s * 1.5);
-                else if (month == 6) {
-                    System.out.println("За" + " " + "июнь" + " " + "начислено" + " " + "$" + s * 1.0);
-                    if (s * 1.0 == 666) break;
-                } else if (month == 7)
-                    System.out.println("За" + " " + "июль" + " " + "начислено" + " " + "$" + s * 1.0);
-                else if (month == 8)
-                    System.out.println("За" + " " + "август" + " " + "начислено" + " " + "$" + s * 1.0);
-                else if (month == 9)
-                    System.out.println("За" + " " + "сентябрь" + " " + "начислено" + " " + "$" + s * 1.5);
-                else if (month == 10)
-                    System.out.println("За" + " " + "октябрь" + " " + "начислено" + " " + "$" + s * 1.5);
-                else if (month == 11)
-                    System.out.println("За" + " " + "ноябрь" + " " + "начислено" + " " + "$" + s * 1.5);
-                else if (month == 12)
-                    System.out.println("За" + " " + "декабрь" + " " + "начислено" + " " + "$" + s * 1.5);
-                else if (month == 13)
-                    System.out.println("За" + " " + "месяц" + " " + month + " " + "начислено" + " " + "$" + s * 0.0);
-                else System.out.println("За" + " " + "месяц" + " " + month + " " + "начислено" + " " + "$" + s * 0.0);
+
+
+        if (s < 300 || s > 3000) System.out.println("Мы вам перезвоним!");
+        else {
+            int mounth;
+            for (mounth = 0; mounth <= 14; mounth++) {
+                double result = s * 1.5;
+                if (mounth < 1 || mounth > 12) {
+                    result = s * 0.0;
+                }
+                if (mounth >= 6 && mounth <= 8) {
+                    result = s * 1.0;
+                }
+                String numMounth = "месяц" + mounth;
+                switch (mounth) {
+                    case 0:
+                        numMounth = "месяц 0";
+                        break;
+                    case 1:
+                        numMounth = "январь";
+                        break;
+                    case 2:
+                        numMounth = "февраль";
+                        break;
+                    case 3:
+                        numMounth = "март";
+                        break;
+                    case 4:
+                        numMounth = "апрель";
+                        break;
+                    case 5:
+                        numMounth = "май";
+                        break;
+                    case 6:
+                        numMounth = "июнь";
+                        break;
+                    case 7:
+                        numMounth = "июль";
+                        break;
+                    case 8:
+                        numMounth = "август";
+                        break;
+                    case 9:
+                        numMounth = "сентябрь";
+                        break;
+                    case 10:
+                        numMounth = "октябрь";
+                        break;
+                    case 11:
+                        numMounth = "ноябрь";
+                        break;
+                    case 12:
+                        numMounth = "декабрь";
+                        break;
+                    case 13:
+                        numMounth = "месяц 13";
+                        break;
+                    case 14:
+                        numMounth = "месяц 14";
+                        break;
+                }
+                System.out.println("За" + " " + numMounth + " " + "начислено" + " " + "$" + result);
+                if (result == 666) break;
             }
-        } else {
-            System.out.println("Мы вам перезвоним!");
         }
     }
 }
+
+
 
 

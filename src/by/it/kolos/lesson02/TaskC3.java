@@ -45,20 +45,7 @@ class TaskC3 {
         double mars = 3.86;
         double weightMars = weightEarth * mars / earth;
         String rounded = String.format(Locale.US, "%.2f", weightMars);
-        return Double.valueOf(rounded); // преобразов. в число
-        /*String one = weightMars+"";// 1 - преобразование числа в строку
-        String two = String.valueOf(weightMars); // 2 - преобразование числа в строку
-        String three = ((Double)weightMars).toString(); // 3 - преобразование числа в строку
-        String rounded = String.format("%f", weightMars); // 4 - преобразование числа в строку (через формат.)
-*/
-        /*double temp=res*100:
-        int tempi=(int)temp;
-        double del=temp-tempi
-        if (del>=0.5);
-        tempi++;
-        return tempi/100/0
-        return Math.round (res*100)/100/0;
-        */
+        return Double.valueOf(rounded);
     }
 }
 
