@@ -22,16 +22,18 @@ END
 [ONE, TWO, THREE, FOUR, FIVE]
 
 */
-//public class TaskA2 {
-  //  public static void main(String[] args) {
-    //    ArrayList<String>list=new ArrayList();
-      //  Scanner sc=new Scanner(System.in);
-       // for(;;){
-        //String word =sc.next();
-        //if(s.equals("END"))
-          //  break;
-        //list.add(word);
+public class TaskA2 {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList();
+        Scanner sc = new Scanner(System.in);
+        for (; ; ) {
+            String word = sc.next();
+            if (word.equals("END"))
+                break;
+            list.add(word);
+        }
+        System.out.println(list);
+    }
+}
 
-    //}
-    //System.out.println(list);
-//}
+

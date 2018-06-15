@@ -29,23 +29,20 @@ size прочитать c клавиатуры. Числа разделить п
 public class TaskB2 {
 
     public static void main (String [] args) {
-        int a, b, c, d ;
-        a=0 ;
-        b=0 ;
-        c=0 ;
-        d=0 ;
-        System.out.println ("Las tablas de multiplicar son" ) ;
-        while (a <= 10) {
-            System.out.println ("La tabla del " +a+ " es : " ) ;
-            b=1;
-            while (b <= 10) {
-                c= (a*b) ;
-                System.out.println (a+ "X" +b+ "=" +c ) ;
-                b++;
+        Scanner sc=new Scanner(System.in);
+        int size=sc.nextInt();
+        int i, j ;
+        i=1 ;
+        j=1 ;
+        do {
+            while (i <= size) {
+                j = 1;
+                while (j <= size) {
+                    System.out.println(i * j);
+                    j++;
+                }
+                i++;
             }
-            a++ ;
-
-        }
-
+        }while (i<=size &&j<=size);
     }
 }

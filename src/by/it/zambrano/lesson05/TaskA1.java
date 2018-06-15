@@ -24,16 +24,19 @@ package by.it.zambrano.lesson05;
 */
 
 
-//import java.util.Scanner;
+import java.util.Scanner;
 
-//public class TaskA1 {
-  //  public static void main(String[] args) {
-    //    Scanner sc=new Scanner(System.in);
-      //  int[] arr=new int[10];
-        //for (int i=arr.length-1;i>=0<arr.length ;i--){
-          //  arr[i]=sc.nextInt();
+public class TaskA1 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int[] mas=new int[10];
+        for (int i = 9; i>= 0 ;i--){
+           mas[i]=sc.nextInt();
 
-        //}
-        //for(int element)
-    //}
-//}
+        }
+        for (int element:mas){
+            System.out.print(element);
+        }
+
+    }
+}

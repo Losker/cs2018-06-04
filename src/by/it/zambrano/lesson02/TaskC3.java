@@ -40,11 +40,10 @@ class TaskC3 {
         return Math.round(res*100)/100.0;
     }
 
-    public static void main(String[] args){
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("Enter weight person:");
-            int massa = scanner.nextInt();
+      static Scanner getWeight = new Scanner(System.in);
+      public static void main(String[] args){
+            int m = getWeight.nextInt();
+            System.out.println(getWeight(m));
 
-            System.out.println(getWeight(massa));
+            }
     }
-}
