@@ -35,7 +35,7 @@ public class TaskC2 {
     }
 
 // сортировка по возрастанию
-    public static void sort2(int[] array) {
+    /*public static void sort2(int[] array) {
         int i, j, t;
         for (i = 1; i < array.length; i++) {
             for (j = array.length - 1; j >= i; j--) {
@@ -50,7 +50,7 @@ public class TaskC2 {
             System.out.println(array[i]);
 
         }
-    }
+    }*/
 
 
 }
