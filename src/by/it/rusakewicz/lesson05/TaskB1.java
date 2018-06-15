@@ -10,6 +10,19 @@ package by.it.rusakewicz.lesson05;
 */
 
 
-public class TaskB1 {
+import java.util.ArrayList;
 
+public class TaskB1 {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("У лукоморья дуб зелёный;");
+        list.add("Златая цепь на дубе том:");
+        list.add("И днём и ночью кот учёный");
+        list.add("Всё ходит по цепи кругом;");
+        list.add("Идёт направо - песнь заводит");
+        System.out.println(list.size());
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i));
+        }
+    }
 }
