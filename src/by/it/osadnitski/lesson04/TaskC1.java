@@ -36,7 +36,80 @@ package by.it.osadnitski.lesson04;
 За месяц 14 начислено $0.0
 
 */
+
+import java.util.Scanner;
+
 public class TaskC1 {
+    public static void main(String[] args) {
+        System.out.println("Какую вы хотите зарплату в $$$?");
+        Scanner scanner = new Scanner(System.in);
+        int sal = scanner.nextInt();
+        int month;
+        double res = sal;
 
 
+        if (res < 300 || res > 3000)
+            System.out.println("Мы вам перезвоним!");
+
+
+        else
+            for (month = 0; month <= 14; month++) {
+                if (month == 0 || month > 12)
+                    res = 0;
+                else if (month >= 6 && month <= 8)
+                    res = sal * 1.5;
+                else res = sal;
+                 if (res == 666) break;
+
+                 switch (month) {
+
+                    case 0:
+                        System.out.println("За месяц " + month + " " + "начислено $" + res);
+                        break;
+                    case 1:
+                        System.out.println("За " + "январь" + " " + "начислено $" + res);
+                        break;
+                    case 2:
+                        System.out.println("За " + "февраль" + " " + "начислено $" + res);
+
+                    case 3:
+                        System.out.println("За " + "март" + " " + "начислено $" + res);
+                        break;
+                    case 4:
+                        System.out.println("За " + "апрель" + " " + "начислено $" + res);
+                        break;
+                    case 5:
+                        System.out.println("За " + "май" + " " + "начислено $" + res);
+                        break;
+                    case 6:
+                        System.out.println("За " + "июнь" + " " + "начислено $" + res);
+                        break;
+                    case 7:
+                        System.out.println("За " + "июль" + " " + "начислено $" + res);
+                        break;
+                    case 8:
+                        System.out.println("За " + "август" + " " + "начислено $" + res);
+                        break;
+                    case 9:
+                        System.out.println("За " + "сентябрь" + " " + "начислено $" + res);
+                        break;
+                    case 10:
+                        System.out.println("За " + "октябрь" + " " + "начислено $" + res);
+                        break;
+                    case 11:
+                        System.out.println("За " + "ноябрь" + " " + "начислено $" + res);
+                        break;
+                    case 12:
+                        System.out.println("За " + "декабрь" + " " + "начислено $" + res);
+                        break;
+                    case 13:
+                        System.out.println("За месяц " + month + " " + "начислено $" + res);
+                        break;
+                    case 14:
+                        System.out.println("За месяц " + month + " " + "начислено $" + res);
+                        break;
+
+                }
+            }
+    }
 }
