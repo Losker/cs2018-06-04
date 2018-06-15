@@ -22,12 +22,22 @@ package by.it.ausiyevich.lesson04;
  */
 
 
+import java.util.Scanner;
+
 public class TaskA3 {
     public static void main(String[] args) {
-        for (int i = 0; i <10 ; i++) {
-            if(i==3 )
-            System.out.println("Я изучаю программирование");
+        Scanner scanner=new Scanner(System.in);
+        int a=scanner.nextInt();
+        int b=scanner.nextInt();
+        int c=scanner.nextInt();
+        if (a == b && b==c)
+            System.out.println(a+" "+b+" "+c);
+        else if (a==b)
+            System.out.println(a+" "+b);
+        else if(b==c)
+            System.out.println(b+" "+c);
+        else if (a==c)
+            System.out.println(a+" "+c);
         }
-    }
     }
 

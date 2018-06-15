@@ -1,4 +1,4 @@
-package by.it.akhmelev.lesson01;
+package by.it.ausiyevich.lesson01;
 
 public class HelloWorld {
     public static void main(String[] args) {

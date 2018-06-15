@@ -20,10 +20,10 @@ class TaskC2 {
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
         int b = scanner.nextInt();
-        int dec = a + b;
-        float bin = a + b;
+        double dec = a + b;
+        int bin = a + b;
         int hex = a + b;
-        int oct = a + b;
+        long oct = a + b;
         System.out.println(dec + bin + hex + oct);
     }
 
