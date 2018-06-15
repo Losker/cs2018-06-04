@@ -32,15 +32,14 @@ public class TaskB3 {
         Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();
 
-        int sum=1;
-
-
-        for (int i = 1; i < x; i++) {
-            i = 2;
-            i++ ;
+        int sum=0;
+        for (int i = 1; ; i++){
+            sum+=i;
+            if (sum>x)break;
             System.out.print(sum+",");
         }
 
-        }
+    }
 
 }
+
