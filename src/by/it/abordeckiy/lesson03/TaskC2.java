@@ -1,4 +1,4 @@
-package by.it._tasks_.lesson03;
+package by.it.abordeckiy.lesson03;
 /*
     Сумма цифр четырехзначного числа
 
@@ -19,7 +19,7 @@ package by.it._tasks_.lesson03;
     4. Метод sumDigitsInNumber не должен ничего выводить на экран.
     5. Метод sumDigitsInNumber должен правильно возвращать сумму всех цифр в числе number.
 */
-class TaskC2 {
+ class TaskC2 {
     public static void main(String[] args) {
         System.out.println(sumDigitsInNumber(5467));
     }
