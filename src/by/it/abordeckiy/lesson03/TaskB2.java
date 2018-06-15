@@ -39,24 +39,23 @@ class TaskB2 {
             return 0;
         }
 
-            public static void main(String[] args) {
-                Scanner sc = new Scanner(System.in);
-                int a = sc.nextInt();
-                int b = sc.nextInt();
-                int c = sc.nextInt();
-                double d = Math.pow( b, 2 ) - ( 4 * a * c );
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+            int c = sc.nextInt();
+            double d = Math.pow(b, 2) - (4 * a * c);
 
-            if (d >= 0) {
-                double x1 = ((-1) * b - Math.sqrt(d)) / (2 * a);
-                double x2 = ((-1) * b + Math.sqrt(d)) / (2 * a);
+            if (d > 0) {
+                double x1 = ((-1) * b + Math.sqrt(d)) / (2 * a);
+                double x2 = ((-1) * b - Math.sqrt(d)) / (2 * a);
                 System.out.println(x1 + " " + x2);
 
-            } else {
+            } else if (d == 0) {
+                double x = (-b) / (2.0 * a);
+                System.out.println(x);
+            } else
                 System.out.println("Отрицательный дискриминант");
-            }
 
         }
-    }
-
-}
-
+    }}
