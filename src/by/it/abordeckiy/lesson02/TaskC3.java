@@ -1,5 +1,9 @@
 package by.it.abordeckiy.lesson02;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.util.Scanner;
+
 /*
 Ускорение свободного падения на Земле и Марсе таково:
 Марс   3.86
@@ -30,5 +34,20 @@ package by.it.abordeckiy.lesson02;
 
 */
 class TaskC3 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int weight = in.nextInt();
+    }
+    public static double getWeight(int x) {
+        double z = 9.81;
+        double y = 3.86;
+        double n = y/z;
+        double a = x*n;
 
+        double newDouble = new BigDecimal(a).setScale(2, RoundingMode.UP).doubleValue();
+
+
+        return newDouble;
+
+    }
 }

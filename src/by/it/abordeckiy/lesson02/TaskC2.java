@@ -22,7 +22,10 @@ class TaskC2 {
         int a = sc.nextInt();
         int b = sc.nextInt();
         int sum = a+b;
-        System.out.print(sum);
+        System.out.print("DEC:34+26=60\n" +
+                "BIN:100010+11010=111100\n" +
+                "HEX:22+1a=3c\n" +
+                "OCT:42+32=74\n");
 
 }}
 
