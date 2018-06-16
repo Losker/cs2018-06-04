@@ -57,14 +57,14 @@ public class TaskC1 {
                 if (month == 0 || month > 12)
                     res = 0;
                 else if (month >= 6 && month <= 8)
-                    res = sal * 1.5;
-                else res = sal;
-                 if (res == 666) break;
+                    res = sal;
+
+                else res = sal * 1.5;
 
                  switch (month) {
 
                     case 0:
-                        System.out.println("За месяц " + month + " " + "начислено $" + res);
+                        System.out.println("За месяц"+" " + month + " " + "начислено $" + res);
                         break;
                     case 1:
                         System.out.println("За " + "январь" + " " + "начислено $" + res);
@@ -110,6 +110,8 @@ public class TaskC1 {
                         break;
 
                 }
+                if (res == 666) break;
+
             }
     }
 }
