@@ -1,4 +1,4 @@
-package by.it._tasks_.lesson06;
+package by.it.zambrano.lesson06;
 
 /*
 Геттеры и сеттеры для класса Dog
@@ -26,6 +26,7 @@ package by.it._tasks_.lesson06;
 Шарик 5
 Тузик 3
 */
+
 
 
 public class TaskA1 {
